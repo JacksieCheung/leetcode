@@ -1,0 +1,128 @@
+offer_25.c: In function 'ListNode* mergeTwoLists(ListNode*, ListNode*)':
+offer_25.c:12:13: error: 'NULL' was not declared in this scope
+     if (l1==NULL&&l2==NULL) return NULL;
+             ^~~~
+offer_25.c:12:13: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:1:1:
++#include <cstddef>
+ // 合并两个有序数组
+offer_25.c:12:13:
+     if (l1==NULL&&l2==NULL) return NULL;
+             ^~~~
+offer_25.c:13:13: error: 'NULL' was not declared in this scope
+     if (l1==NULL) return l2;
+             ^~~~
+offer_25.c:13:13: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:14:13: error: 'NULL' was not declared in this scope
+     if (l2==NULL) return l1;
+             ^~~~
+offer_25.c:14:13: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:15:75: error: invalid application of 'sizeof' to incomplete type 'ListNode'
+     struct ListNode* res = (struct ListNode*)malloc(sizeof(struct ListNode));
+                                                                           ^
+offer_25.c:15:46: error: 'malloc' was not declared in this scope
+     struct ListNode* res = (struct ListNode*)malloc(sizeof(struct ListNode));
+                                              ^~~~~~
+offer_25.c:15:46: note: 'malloc' is defined in header '<cstdlib>'; did you forget to '#include <cstdlib>'?
+offer_25.c:1:1:
++#include <cstdlib>
+ // 合并两个有序数组
+offer_25.c:15:46:
+     struct ListNode* res = (struct ListNode*)malloc(sizeof(struct ListNode));
+                                              ^~~~~~
+offer_25.c:17:15: error: 'NULL' was not declared in this scope
+     while(l1!=NULL&&l2!=NULL){
+               ^~~~
+offer_25.c:17:15: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:18:15: error: invalid use of incomplete type 'struct ListNode'
+         if (l1->val <= l2->val){
+               ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:18:26: error: invalid use of incomplete type 'struct ListNode'
+         if (l1->val <= l2->val){
+                          ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:19:15: error: invalid use of incomplete type 'struct ListNode'
+             l3->next = l1;
+               ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:20:20: error: invalid use of incomplete type 'struct ListNode'
+             l1 = l1->next;
+                    ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:22:15: error: invalid use of incomplete type 'struct ListNode'
+             l3->next = l2;
+               ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:23:20: error: invalid use of incomplete type 'struct ListNode'
+             l2 = l2->next;
+                    ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:25:16: error: invalid use of incomplete type 'struct ListNode'
+         l3 = l3->next;
+                ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:27:16: error: 'NULL' was not declared in this scope
+     while (l1!=NULL){
+                ^~~~
+offer_25.c:27:16: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:28:11: error: invalid use of incomplete type 'struct ListNode'
+         l3->next = l1;
+           ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:29:16: error: invalid use of incomplete type 'struct ListNode'
+         l1 = l1->next;
+                ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:30:16: error: invalid use of incomplete type 'struct ListNode'
+         l3 = l3->next;
+                ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:32:16: error: 'NULL' was not declared in this scope
+     while (l2!=NULL){
+                ^~~~
+offer_25.c:32:16: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
+offer_25.c:33:11: error: invalid use of incomplete type 'struct ListNode'
+         l3->next = l2;
+           ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:34:16: error: invalid use of incomplete type 'struct ListNode'
+         l2 = l2->next;
+                ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:35:16: error: invalid use of incomplete type 'struct ListNode'
+         l3 = l3->next;
+                ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
+offer_25.c:37:15: error: invalid use of incomplete type 'struct ListNode'
+     return res->next;
+               ^~
+offer_25.c:11:8: note: forward declaration of 'struct ListNode'
+ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){
+        ^~~~~~~~
