@@ -1,102 +1,11 @@
-19_1.c: In function 'ListNode* removeNthFromEnd(ListNode*, int)':
-19_1.c:14:77: error: invalid application of 'sizeof' to incomplete type 'ListNode'
-     struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
-                                                                             ^
-19_1.c:14:48: error: 'malloc' was not declared in this scope
-     struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
-                                                ^~~~~~
-19_1.c:14:48: note: 'malloc' is defined in header '<cstdlib>'; did you forget to '#include <cstdlib>'?
-19_1.c:1:1:
-+#include <cstdlib>
- // 删除倒数元素的链表
-19_1.c:14:48:
-     struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
-                                                ^~~~~~
-19_1.c:15:10: error: invalid use of incomplete type 'struct ListNode'
-     dummy->next = head;
-          ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:16:10: error: invalid use of incomplete type 'struct ListNode'
-     dummy->val = 0;
-          ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:21:9: error: 'printf' was not declared in this scope
-         printf("hello");
-         ^~~~~~
-19_1.c:21:9: note: 'printf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
-19_1.c:1:1:
-+#include <cstdio>
- // 删除倒数元素的链表
-19_1.c:21:9:
-         printf("hello");
-         ^~~~~~
-19_1.c:22:22: error: invalid use of incomplete type 'struct ListNode'
-         first = first->next;
-                      ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:24:16: error: invalid use of incomplete type 'struct ListNode'
-     while(first->next!=NULL){
-                ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:24:24: error: 'NULL' was not declared in this scope
-     while(first->next!=NULL){
-                        ^~~~
-19_1.c:24:24: note: 'NULL' is defined in header '<cstddef>'; did you forget to '#include <cstddef>'?
-19_1.c:1:1:
-+#include <cstddef>
- // 删除倒数元素的链表
-19_1.c:24:24:
-     while(first->next!=NULL){
-                        ^~~~
-19_1.c:25:20: error: invalid use of incomplete type 'struct ListNode'
-         first=first->next;
-                    ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:26:22: error: invalid use of incomplete type 'struct ListNode'
-         second=second->next;
-                      ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:28:23: error: invalid use of incomplete type 'struct ListNode'
-     printf("%d",second->val);
-                       ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:28:5: error: 'printf' was not declared in this scope
-     printf("%d",second->val);
-     ^~~~~~
-19_1.c:28:5: note: 'printf' is defined in header '<cstdio>'; did you forget to '#include <cstdio>'?
-19_1.c:29:11: error: invalid use of incomplete type 'struct ListNode'
-     second->next=second->next->next;
-           ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:29:24: error: invalid use of incomplete type 'struct ListNode'
-     second->next=second->next->next;
-                        ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:30:17: error: invalid use of incomplete type 'struct ListNode'
-     head = dummy->next;
-                 ^~
-19_1.c:13:8: note: forward declaration of 'struct ListNode'
- struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
-        ^~~~~~~~
-19_1.c:31:5: error: 'free' was not declared in this scope
-     free(dummy);
-     ^~~~
-19_1.c:31:5: note: 'free' is defined in header '<cstdlib>'; did you forget to '#include <cstdlib>'?
+844_1.c: In function 'bool backspaceCompare(char*, char*)':
+844_1.c:5:13: error: 'strlen' was not declared in this scope
+     int i = strlen(S)-1;
+             ^~~~~~
+844_1.c:5:13: note: 'strlen' is defined in header '<cstring>'; did you forget to '#include <cstring>'?
+844_1.c:1:1:
++#include <cstring>
+ // 比较含退格的字符串
+844_1.c:5:13:
+     int i = strlen(S)-1;
+             ^~~~~~
