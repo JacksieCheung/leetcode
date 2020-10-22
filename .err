@@ -1,0 +1,24 @@
+763.c: In function 'int* partitionLabels(char*, int*)':
+763.c:9:16: error: 'strlen' was not declared in this scope
+     int sLen = strlen(S);
+                ^~~~~~
+763.c:9:16: note: 'strlen' is defined in header '<cstring>'; did you forget to '#include <cstring>'?
+763.c:1:1:
++#include <cstring>
+ /**
+763.c:9:16:
+     int sLen = strlen(S);
+                ^~~~~~
+763.c:16:22: error: 'malloc' was not declared in this scope
+     int *res = (int*)malloc(sizeof(int)*sLen);
+                      ^~~~~~
+763.c:16:22: note: 'malloc' is defined in header '<cstdlib>'; did you forget to '#include <cstdlib>'?
+763.c:1:1:
++#include <cstdlib>
+ /**
+763.c:16:22:
+     int *res = (int*)malloc(sizeof(int)*sLen);
+                      ^~~~~~
+763.c:18:15: error: 'max' was not declared in this scope
+         end = max(last[S[i]-'a'],end);
+               ^~~
