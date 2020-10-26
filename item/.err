@@ -1,0 +1,11 @@
+1365_1.c: In function 'int* smallerNumbersThanCurrent(int*, int, int*)':
+1365_1.c:6:22: error: 'malloc' was not declared in this scope
+     int* res = (int*)malloc(sizeof(int)*numsSize);
+                      ^~~~~~
+1365_1.c:6:22: note: 'malloc' is defined in header '<cstdlib>'; did you forget to '#include <cstdlib>'?
+1365_1.c:1:1:
++#include <cstdlib>
+ // 请你统计数组中比它小的所有数字的数目
+1365_1.c:6:22:
+     int* res = (int*)malloc(sizeof(int)*numsSize);
+                      ^~~~~~

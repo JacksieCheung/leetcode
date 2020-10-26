@@ -1,4 +1,4 @@
-## Sort 排序
+## Sort 排序 PART I
 
 ### 1. 插入排序 insertion sort / 时间复杂度 O(n2)
 
@@ -309,8 +309,8 @@ void quicksort(int* arr,int low,int high){
 	if (low<high){
 		int pi = partition(arr,low,high);
 
-		quicksort(arr,low,pi-1);
-		quicksort(arr,pi+1,high);
+		quicksort(arr,low,pi-1);  // 传入的节点是pi-1和pi+1
+		quicksort(arr,pi+1,high); // 不用担心越界的问题，因为下一次递归有条件限制。
 	}
 }
 
