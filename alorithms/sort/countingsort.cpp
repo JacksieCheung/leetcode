@@ -10,16 +10,16 @@ void countingsort(int* arr,int n){
 		C[i]=C[i]+C[i-1];
 	}
 
-	int Blen = i-1;
-	int B[Blen]={0};
+	int B[n]={0};
 
 	for (i=n-1;i>=0;i--){
-		B[C[arr[i]]]=arr[i];
-		C[arr[i]]=C[arr[i]]-1;
-	}
+		B[C[arr[i]]-1]=arr[i];   // C数组保存的就是我们要的次序，用arr[i]访问得到
+		C[arr[i]]=C[arr[i]]-1; // 特定的字符的次序。然后该次序减1,如果有重复的元
+	}                          // 素，给他们留出位置。所以C保存的同一个字符最后
+	                           // 出现的位置
 
 	i = 0;
-	while(i<Blen){
+	while(i<n){
 		std::cout<<B[i]<<" ";
 		i++;
 	}
