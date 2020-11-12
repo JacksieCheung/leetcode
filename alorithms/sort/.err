@@ -1,0 +1,4 @@
+bucketsort.cpp: In function 'void bucketSort(float*, int)':
+bucketsort.cpp:19:17: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<float>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+   for (int j=0;j<b[i].size();j++){
+                ~^~~~~~~~~~~~
